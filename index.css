@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav__content{
+    max-width: 700px;
+    padding-left: 0;
+    padding-right: 0;
+}
+/* main */
+.main{
+    padding-top: 76px;
+    min-height: 600px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__body{
+    max-width: 700px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+@media (max-width:725px) {
+    .main__body{
+        padding: 25px 20px 30px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.main__content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 15px;
+}
+/* projects section */
+.projects{
+    width: 100%;
+    background-color: #000;
+    padding-bottom: 40px;
+    color: #fff;
+}
+.projects__body{
+    align-items: center;
+    display: flex;
+    min-height: 650px;
+}
+.projects__content{
+    max-width: 700px;
+    padding: 0;
+}
+@media (max-width:725px) {
+    .projects__content{
+        padding: 0 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.projects__content h2{
+    margin-bottom: 20px;
+}
+.projects__content__link{
+    border: none;
+    background-color: #000;
+}
+.projects__content__link:hover{
+    background-color: #252525;
+}
+/* contact section */
+.contact{
+    padding: 20px 20px 0 20px;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+}
+.contact > form{
+    max-width: 700px;
+}
+.contact > form > button{
+    border: none;
+    padding: 6px 22px 6px 22px;
+}      
+.contact > form > button{
+    background-color: #252525;
+}
+.contact__form__input{
+    margin-bottom: 10px;
+}
+
+/* footer */
+.footer{
+}
+.footer__card{
+    margin-top: 30px;
+    background-color: black;
+    color: #fff;
+    padding: 30px 0 30px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.footer__card__body{
+    align-items: center;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width:725px) {
+    .footer__card__body{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer__card__body h5{
+        font-size: 15px;
+    }
+}
+.footer__card__link{
+    border: none;
+    color: #000;
+}
+.footer__card__link:hover{
+    border: none;
+    color: #252525;
+}
